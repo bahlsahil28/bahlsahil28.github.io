@@ -58,6 +58,11 @@ h2 { font-size: 2.2rem; }
 	font-weight: 400;
 }
 
+.mySlides {
+	width: 100%;
+	height: 400px;
+}
+
 .tm-main-nav { font-size: 1.2rem; }
 
 .navbar-nav .nav-link {
@@ -237,6 +242,11 @@ p { line-height: 1.9; }
     height: 333px;
     width: 100%;
     margin-top: 40px;
+}
+
+.img-cat {
+	width: 300px;
+	height: 300px;
 }
 
 .tm-contact-right { padding-left: 30px; }
