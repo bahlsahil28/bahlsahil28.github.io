@@ -12,6 +12,8 @@ body {
 	font-size: 18px;
 	font-weight: 300;
 	overflow-x: hidden;
+	background: #f9ae9f;
+    background-image: linear-gradient(#fcd7cf, #f9ae9f 60%, #f9ae9f);
 }
 
 ul {
@@ -63,6 +65,15 @@ h2 { font-size: 2.2rem; }
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.mySlides-border {
+	width: 70%;
+	height: 350px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 3
 }
 
 .tm-main-nav { font-size: 1.2rem; }
