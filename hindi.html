@@ -386,12 +386,12 @@ http://www.templatemo.com/tm-488-classic
                     success: function(movies){
                         movies.forEach(movie => {
                             if (!tillYear.length && genre.length > 0) {
-                                $("#movie-list-" + tillYear + '-' + genre).append('<li class="col-md-3">' + LetterCapitalize(movie.name) + "</li>");
+                                $("#movie-list-" + tillYear + '-' + genre).append('<a href="' + movie.name.replace(" ", "_").toLowerCase() + '.html"><li class="col-md-3">' + LetterCapitalize(movie.name) + "</li></a>");
                             }
                             else if (!tillYear.length) {
-                                $("#movie-list-" + tillYear).append('<li class="col-md-3">' + LetterCapitalize(movie.name) + "</li>");
+                                $("#movie-list-" + tillYear).append('<a href="' + movie.name.replace(" ", "_").toLowerCase() + '.html"><li class="col-md-3">' + LetterCapitalize(movie.name) + "</li></a>");
                             } else {
-                                $("#movie-list-" + genre).append('<li class="col-md-3">' + LetterCapitalize(movie.name) + "</li>");
+                                $("#movie-list-" + genre).append('<a href="' + movie.name.replace(" ", "_").toLowerCase() + '.html"><li class="col-md-3">' + LetterCapitalize(movie.name) + "</li></a>");
                             }
                         });
                     },
