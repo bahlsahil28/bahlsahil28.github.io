@@ -24,12 +24,11 @@ http://www.templatemo.com/tm-488-classic
 </head>
 
     <body>
-	    <div class="tm-home-video">
-                <video class="cinema-video" autoplay loop height="400px" width="100%" muted>
-                        <source src="cinema.mp4" type="video/mp4">
-                </video>
-        </div>
-		
+            <a href="index.html"><img src="img/logo.jpg" style="position:absolute;top:0px;left:5px"/></a>
+            <div style="width:100%;height:100%;padding-left:10%;padding-right:10%">
+            <div class="tm-image-home-container">
+                <img class="mySlides" src="img/cinema-default.jpg">
+            </div>
         <div class="tm-header">
             <div class="container-fluid">
                 <div class="tm-header-inner">
@@ -124,6 +123,7 @@ http://www.templatemo.com/tm-488-classic
                 </div>
                 </div> <!-- row -->
         </section>
+        </div>
 
         <footer class="tm-footer"></footer>
 
@@ -152,12 +152,12 @@ http://www.templatemo.com/tm-488-classic
                     success: function(movies){
                         movies.forEach(movie => {
                             if (!tillYear.length && genre.length > 0) {
-                                $("#movie-list-" + tillYear + '-' + genre).append('<li class="col-md-3">' + LetterCapitalize(movie.name) + "</li>");
+                                $("#movie-list-" + tillYear + '-' + genre).append('<a href="' + movie.name.replace(" ", "_").toLowerCase() + '.html"><li class="col-md-3">' + LetterCapitalize(movie.name) + "</li></a>");
                             }
                             else if (!tillYear.length) {
-                                $("#movie-list-" + tillYear).append('<li class="col-md-3">' + LetterCapitalize(movie.name) + "</li>");
+                                $("#movie-list-" + tillYear).append('<a href="' + movie.name.replace(" ", "_").toLowerCase() + '.html"><li class="col-md-3">' + LetterCapitalize(movie.name) + "</li></a>");
                             } else {
-                                $("#movie-list-" + genre).append('<li class="col-md-3">' + LetterCapitalize(movie.name) + "</li>");
+                                $("#movie-list-" + genre).append('<a href="' + movie.name.replace(" ", "_").toLowerCase() + '.html"><li class="col-md-3">' + LetterCapitalize(movie.name) + "</li></a>");
                             }
                         });
                     },
