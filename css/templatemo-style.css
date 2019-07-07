@@ -12,8 +12,11 @@ body {
 	font-size: 18px;
 	font-weight: 300;
 	overflow-x: hidden;
-	background: #f9ae9f;
-    background-image: linear-gradient(#fcd7cf, #f9ae9f 60%, #f9ae9f);
+    background-image: url("sky-background.jpg");
+}
+
+.text-uppercase {
+	color: white;
 }
 
 ul {
@@ -39,6 +42,13 @@ h2 { font-size: 2.2rem; }
 @media (max-width: 1390px) {
 }
 
+.cinema-links {
+	color: #b0cfe6
+}
+
+.cinema-links:hover {
+	color: white
+}
 .tm-header-inner {
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -84,11 +94,6 @@ h2 { font-size: 2.2rem; }
 	padding: 10px 40px;
 }
 
-.website-audio {
-	width: 40px;
-	height: 40px;
-}
-
 .cinema-video {
 	height: 70vh;
     width: 100%;
@@ -103,7 +108,7 @@ h2 { font-size: 2.2rem; }
 
 }
 
-.tm-gold-text { color: #cc9900; }
+.tm-gold-text { color: white; }
 
 .tm-section {
 	padding-bottom: 100px;
@@ -274,10 +279,6 @@ p { line-height: 1.9; }
 	.tm-2-col-right { padding-left: 0; }
 	.tm-text-link {
 		line-height: 2.2;
-	}
-	.container-fluid {
-		padding-left: 4%;
-		padding-right: 4%;
 	}
 }
 
